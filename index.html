@@ -1,48 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форми та елементи</title>
 </head>
 <body>
-    <h1>Мій перший заголовок</h1>
-    <p>Мій перший параграф.</p>
 
-    <h1>Це заголовок 1</h1>
-    <h2>Це заголовок 2</h2>
-    <h3>Це заголовок 3</h3>
-    <h4>Це заголовок 4</h4>
-    <h5>Це заголовок 5</h5>
-    <h6>Це заголовок 6</h6>
+<h2>HTML форми</h2>
+<form action="https://dariyannaa.github.io/Independent/"> 
+  Ім'я:<br>
+  <input type="text" name="firstname" value="Дарія">
+  <br>
+  Прізвище:<br>
+  <input type="text" name="lastname" value="Плєшкова">
+  <br><br>
+  <input type="submit" value="Відправити">
+</form>
 
-    <p>Це параграф.</p>
-    <p>Це інший параграф.</p>
+<h2>Елемент input</h2>
+<form action="https://dariyannaa.github.io/Independent/">
+  Введіть ваше ім'я:
+  <input name="firstname" type="text">
+  <br><br>
+  <input type="submit" value="Надіслати">
+</form>
 
-    <h2>HTML Посилання</h2>
-    <p>HTML посилання визначаються за допомогою тега a:</p>
-    <a href="https://w3schoolsua.github.io/">Це посилання</a>
+<h2>Елемент select</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars">
+    <option value="tesla">Tesla</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Вибрати">
+</form>
 
-    <h2>HTML Зображення</h2>
-    <p>HTML зображення визначаються за допомогою тега img:</p>
-    <img src="../якесьфото" alt="фото" width="120" height="150">
+<h2>Попередньо вибраний варіант</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars">
+    <option value="tesla">Tesla</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes" selected>Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Надіслати">
+</form>
 
-    <h2>HTML Кнопки</h2>
-    <p>HTML кнопки визначаються за допомогою тега button:</p>
-    <button>Тицни мене!</button>
+<h2>Видимі значення параметрів</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars" size="3">
+    <option value="tesla">Tesla</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Надіслати">
+</form>
 
-    <h2>Невпорядкований список HTML</h2>
-    <ul>
-    <li>Кава</li>
-    <li>Чай</li>
-    <li>Молоко</li>
-    </ul>
+<h2>Дозволити множинний вибір</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <select name="cars" size="4" multiple>
+    <option value="tesla">Tesla</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Надіслати">
+</form>
 
-    <h2>Впорядкований список HTML</h2>
-    <ol>
-    <li>Кава</li>
-    <li>Чай</li>
-    <li>Молоко</li>
-    </ol>
+<h2>Textarea</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <textarea name="message" rows="10" cols="30">Зміст повідомлення змінено.</textarea>
+  <br>
+  <input type="submit" value="Надіслати повідомлення">
+</form>
+
+<h2>Елемент button</h2>
+<button type="button" onclick="alert('Героям слава!')">Натисни мене!</button>
+
+<h2>Поле пароля</h2>
+<form action="#">
+  Ім'я користувача:<br>
+  <input type="text" name="userid">
+  <br>
+  Пароль користувача:<br>
+  <input type="password" name="psw">
+</form>
+
+<h2>Кнопка Reset</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я:<br>
+  <input type="text" name="firstname" value="Дарія">
+  <br>
+  Прізвище:<br>
+  <input type="text" name="lastname" value="Плєшкова">
+  <br><br>
+  <input type="submit" value="Відправити">
+  <input type="reset" value="Очистити">
+</form>
+
+<h2>Радіо кнопки</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <input type="radio" name="gender" value="male" checked> Чоловік<br>
+  <input type="radio" name="gender" value="female"> Жінка<br>
+  <input type="radio" name="gender" value="other"> Інше<br><br>
+  <input type="submit" value="Надіслати">
+</form>
+
+<h2>Прапорці</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike"> У мене є велосипед<br>
+  <input type="checkbox" name="vehicle2" value="Car"> У мене є автомобіль<br><br>
+  <input type="submit" value="Надіслати">
+</form>
+
+<h2>Атрибут maxlength</h2>
+<form action="#">
+  Ім'я:<br>
+  <input type="text" name="firstname" maxlength="10">
+  <br>
+  Прізвище:<br>
+  <input type="text" name="lastname">
+</form>
+
+<h2>Атрибут form</h2>
+<form action="https://www.w3schools.com/action_page.php" id="form1">
+  Ім'я: <input type="text" name="fname"><br>
+  <input type="submit" value="Відправити">
+</form>
+Прізвище: <input type="text" name="lname" form="form1">
+
+<h2>Атрибут formaction</h2>
+<form action="https://www.w3schools.com/action_page.php">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити">
+  <input type="submit" formaction="/action_page2.php" value="Відправити на іншу сторінку">
+</form>
+
+<h2>Атрибут formenctype</h2>
+<form action="https://www.w3schools.com/action_page_binary.asp" method="post">
+  Ім'я: <input type="text" name="fname"><br>
+  <input type="submit" value="Відправити">
+  <input type="submit" formenctype="multipart/form-data" value="Надіслати як Multipart/form-data">
+</form>
+
+<h2>Атрибут formmethod</h2>
+<form action="https://www.w3schools.com/action_page.php" method="get">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити">
+  <input type="submit" formmethod="post" value="Відправити за допомогою POST">
+</form>
+
+<h2>Атрибут formtarget</h2>
+<form action="https://dariyannaa.github.io/Independent/">
+  Ім'я: <input type="text" name="fname"><br>
+  Прізвище: <input type="text" name="lname"><br>
+  <input type="submit" value="Відправити як зазвичай">
+  <input type="submit" formtarget="_blank" value="Відправити в новому вікні/вкладці">
+</form>
+
 </body>
 </html>
